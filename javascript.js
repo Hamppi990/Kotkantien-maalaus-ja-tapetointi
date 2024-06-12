@@ -3,7 +3,7 @@ function changeDivColor(color, divId) {
     testArea.style.backgroundColor = color;
 }
 
-function resetColors() {
-    document.getElementById('test-area-1').style.backgroundColor = '';
-    document.getElementById('test-area-2').style.backgroundColor = '';
+function resetColor(areaId) {
+    document.getElementById(areaId).style.backgroundColor = '';
 }
+

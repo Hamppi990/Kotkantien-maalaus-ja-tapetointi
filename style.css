@@ -1,6 +1,7 @@
 body {
-    background: linear-gradient(135deg, #B6CFEA, #e0f7fa);
     font-family: Arial, sans-serif;
+    background-image: url('0a1bdac0-e74f-4f1d-8808-bc4e5c6fa6b9.jpg'); 
+    background-size: cover;
 }
 
 
@@ -102,12 +103,13 @@ h1 {
 .colors {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    width: 400px;
-    margin-left: 14%;
-    margin-bottom: 25px;
+    justify-content: center; /* Keskitä vaakasuunnassa */
+    gap: 10px; /* Väli napin ja toisen välillä */
+    width: 75%; /* Dynaaminen leveys */
+    margin: 0 auto; /* Keskittää vaakasuunnassa */
+    margin-bottom: 25px; /* Alareunaan marginaali */
 }
+
 
 .color {
     width: 40px;
@@ -153,9 +155,12 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-.mt-5
-{
-    background-color:rgb(245, 247, 255);
+.mt-5 {
+    background-color: rgb(250, 251, 255);
     border-radius: 10px;
-    padding: 5%;
+    padding: 2.5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
