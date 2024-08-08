@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,14 @@
     <script src="../javascript/javascript.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <title>Yhteystiedot</title>
 </head>
+
 <body>
+    <div class="loading-overlay">
+        <div class="loader"></div>
+    </div>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand">
@@ -73,53 +78,58 @@
     <div class="container mt-5">
         <h2>Yhteydenottolomake</h2>
         <form id="contactForm" action="#" method="POST">
-          <div class="mb-3">
-            <label for="name" class="form-label">Nimi</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Sähköposti</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-          </div>
-          <div class="mb-3">
-            <label for="subject" class="form-label">Aihe</label>
-            <select class="form-control" id="subject" name="subject" required>
-              <option value="" disabled selected>Valitse aihe</option>
-              <option value="Yleinen tiedustelu">Yleinen tiedustelu</option>
-              <option value="Palautetta">Palautetta</option>
-              <option value="Tarjouspyyntö">Tarjouspyyntö</option>
-              <option value="Muu">Muu</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Viesti</label>
-            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nimi</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Sähköposti</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="subject" class="form-label">Aihe</label>
+                <select class="form-control" id="subject" name="subject" required>
+                    <option value="" disabled selected>Valitse aihe</option>
+                    <option value="Yleinen tiedustelu">Yleinen tiedustelu</option>
+                    <option value="Palautetta">Palautetta</option>
+                    <option value="Tarjouspyyntö">Tarjouspyyntö</option>
+                    <option value="Muu">Muu</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Viesti</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Lähetä viesti</button>
         </form>
-      </div>
-      <br><br>
-      <footer>
+    </div>
+    <br><br>
+    <footer>
         <div class="bg-dark text-white">
             <div class="container py-4">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h5 class="text-white mb-3">Kartalla</h5>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.8379692809362!2d25.508349977649235!3d65.00146934481731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cd5aac2e0dcb%3A0xd0f738d563fe562d!2sKotkantie%203%2C%2090250%20Oulu%2C%20Suomi!5e1!3m2!1sfi!2sus!4v1717574402900!5m2!1sfi!2sus" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.8379692809362!2d25.508349977649235!3d65.00146934481731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cd5aac2e0dcb%3A0xd0f738d563fe562d!2sKotkantie%203%2C%2090250%20Oulu%2C%20Suomi!5e1!3m2!1sfi!2sus!4v1717574402900!5m2!1sfi!2sus"
+                            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h5 class="text-white mb-3">Yhteystiedot</h5>
                         <ul class="list-unstyled mb-0">
-                            <li><a href="https://maps.app.goo.gl/LrHc7cmNsEPh6Z8Y8" class="text-white">Kotkantie 3, 90100 Oulu</a></li>
+                            <li><a href="https://maps.app.goo.gl/LrHc7cmNsEPh6Z8Y8" class="text-white">Kotkantie 3,
+                                    90100 Oulu</a></li>
                             <li><a href="tel:+3584499988899" class="text-white">+ 358 44 999 888 99</a></li>
-                            <li><a href="mailto:info@kotkantienmaalaus.fi" class="text-white">info@kotkantienmaalaus.fi</a></li>
+                            <li><a href="mailto:info@kotkantienmaalaus.fi"
+                                    class="text-white">info@kotkantienmaalaus.fi</a></li>
                         </ul>
                         <br>
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/yourinstagram" class="text-white me-2">
+                            <a href="https://www.instagram.com/osaopalvelut/" class="text-white me-2">
                                 <i class="fab fa-instagram fa-3x"></i>
                             </a>
-                            <a href="https://www.youtube.com/youryoutubechannel" class="text-white">
+                            <a href="https://www.youtube.com/channel/UC3Iqv_zEnWSkxxi4hhwwvzQ" class="text-white">
                                 <i class="fab fa-youtube fa-3x"></i>
                             </a>
                         </div>
@@ -142,4 +152,5 @@
         </div>
     </footer>
 </body>
+
 </html>

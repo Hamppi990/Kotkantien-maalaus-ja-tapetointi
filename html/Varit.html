@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,14 @@
     <script src="../javascript/javascript.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <title>Värien testaus</title>
 </head>
+
 <body>
+    <div class="loading-overlay">
+        <div class="loader"></div>
+    </div>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand">
@@ -48,7 +53,8 @@
     <section class="hero-section2">
         <div class="container">
             <h1>Värien testaus</h1>
-            <h3>Tässä voit testata miltä värit näyttäisi seinässäsi. Löydä oma suosikkisi ja laita muistiin tilaukseen.</h3><br>
+            <h3>Tässä voit testata miltä värit näyttäisi seinässäsi. Löydä oma suosikkisi ja laita muistiin tilaukseen.
+            </h3><br>
         </div>
     </section>
     <div class="container mt-5">
@@ -66,23 +72,40 @@
                     </div>
                 </div>
                 <div class="colors">
-                    <!-- 16 color buttons for Palette 1 -->
-                    <button class="color" style="background-color: #DD4132;" onclick="changeDivColor('#DD4132', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #9E1030;" onclick="changeDivColor('#9E1030', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #FE840E;" onclick="changeDivColor('#FE840E', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #FF6F61;" onclick="changeDivColor('#FF6F61', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #C62168;" onclick="changeDivColor('#C62168', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #8D9440;" onclick="changeDivColor('#8D9440', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #FFD662;" onclick="changeDivColor('#FFD662', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #00539C;" onclick="changeDivColor('#00539C', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #755139;" onclick="changeDivColor('#755139', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #D69C2F;" onclick="changeDivColor('#D69C2F', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #616247;" onclick="changeDivColor('#616247', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #E8B5CE;" onclick="changeDivColor('#E8B5CE', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #D2C29D;" onclick="changeDivColor('#D2C29D', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #343148;" onclick="changeDivColor('#343148', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #F0EAD6;" onclick="changeDivColor('#F0EAD6', 'test-area-1')"></button>
-                    <button class="color" style="background-color: #615550;" onclick="changeDivColor('#615550', 'test-area-1')"></button>
+<!-- 16 color buttons for Palette 1 -->
+<button class="color" style="background-color: #DD4132;" data-color-name="Fiesta"
+    onclick="changeDivColor('#DD4132', 'test-area-1')"></button>
+<button class="color" style="background-color: #9E1030;" data-color-name="Jester Red"
+    onclick="changeDivColor('#9E1030', 'test-area-1')"></button>
+<button class="color" style="background-color: #FE840E;" data-color-name="Turmeric"
+    onclick="changeDivColor('#FE840E', 'test-area-1')"></button>
+<button class="color" style="background-color: #FF6F61;" data-color-name="Living Coral"
+    onclick="changeDivColor('#FF6F61', 'test-area-1')"></button>
+<button class="color" style="background-color: #C62168;" data-color-name="Pink Peacock"
+    onclick="changeDivColor('#C62168', 'test-area-1')"></button>
+<button class="color" style="background-color: #8D9440;" data-color-name="Pepper Stem"
+    onclick="changeDivColor('#8D9440', 'test-area-1')"></button>
+<button class="color" style="background-color: #FFD662;" data-color-name="Aspen Gold"
+    onclick="changeDivColor('#FFD662', 'test-area-1')"></button>
+<button class="color" style="background-color: #00539C;" data-color-name="Princess Blue"
+    onclick="changeDivColor('#00539C', 'test-area-1')"></button>
+<button class="color" style="background-color: #755139;" data-color-name="Toffee"
+    onclick="changeDivColor('#755139', 'test-area-1')"></button>
+<button class="color" style="background-color: #D69C2F;" data-color-name="Mango Mojito"
+    onclick="changeDivColor('#D69C2F', 'test-area-1')"></button>
+<button class="color" style="background-color: #616247;" data-color-name="Terrarium Moss"
+    onclick="changeDivColor('#616247', 'test-area-1')"></button>
+<button class="color" style="background-color: #E8B5CE;" data-color-name="Sweet Lilac"
+    onclick="changeDivColor('#E8B5CE', 'test-area-1')"></button>
+<button class="color" style="background-color: #D2C29D;" data-color-name="Soybean"
+    onclick="changeDivColor('#D2C29D', 'test-area-1')"></button>
+<button class="color" style="background-color: #343148;" data-color-name="Eclipse"
+    onclick="changeDivColor('#343148', 'test-area-1')"></button>
+<button class="color" style="background-color: #F0EAD6;" data-color-name="Sweet Corn"
+    onclick="changeDivColor('#F0EAD6', 'test-area-1')"></button>
+<button class="color" style="background-color: #615550;" data-color-name="Brown Granite"
+    onclick="changeDivColor('#615550', 'test-area-1')"></button>
+
                 </div>
             </div>
             <div class="col-md-6">
@@ -98,23 +121,40 @@
                     </div>
                 </div>
                 <div class="colors">
-                    <!-- 16 color buttons for Palette 2 -->
-                    <button class="color" style="background-color: #DD4132;" onclick="changeDivColor('#DD4132', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #9E1030;" onclick="changeDivColor('#9E1030', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #FE840E;" onclick="changeDivColor('#FE840E', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #FF6F61;" onclick="changeDivColor('#FF6F61', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #C62168;" onclick="changeDivColor('#C62168', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #8D9440;" onclick="changeDivColor('#8D9440', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #FFD662;" onclick="changeDivColor('#FFD662', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #00539C;" onclick="changeDivColor('#00539C', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #755139;" onclick="changeDivColor('#755139', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #D69C2F;" onclick="changeDivColor('#D69C2F', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #616247;" onclick="changeDivColor('#616247', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #E8B5CE;" onclick="changeDivColor('#E8B5CE', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #D2C29D;" onclick="changeDivColor('#D2C29D', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #343148;" onclick="changeDivColor('#343148', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #F0EAD6;" onclick="changeDivColor('#F0EAD6', 'test-area-2')"></button>
-                    <button class="color" style="background-color: #615550;" onclick="changeDivColor('#615550', 'test-area-2')"></button>
+<!-- 16 color buttons for Palette 1 -->
+<button class="color" style="background-color: #DD4132;" data-color-name="Fiesta"
+    onclick="changeDivColor('#DD4132', 'test-area-2')"></button>
+<button class="color" style="background-color: #9E1030;" data-color-name="Jester Red"
+    onclick="changeDivColor('#9E1030', 'test-area-2')"></button>
+<button class="color" style="background-color: #FE840E;" data-color-name="Turmeric"
+    onclick="changeDivColor('#FE840E', 'test-area-2')"></button>
+<button class="color" style="background-color: #FF6F61;" data-color-name="Living Coral"
+    onclick="changeDivColor('#FF6F61', 'test-area-2')"></button>
+<button class="color" style="background-color: #C62168;" data-color-name="Pink Peacock"
+    onclick="changeDivColor('#C62168', 'test-area-2')"></button>
+<button class="color" style="background-color: #8D9440;" data-color-name="Pepper Stem"
+    onclick="changeDivColor('#8D9440', 'test-area-2')"></button>
+<button class="color" style="background-color: #FFD662;" data-color-name="Aspen Gold"
+    onclick="changeDivColor('#FFD662', 'test-area-2')"></button>
+<button class="color" style="background-color: #00539C;" data-color-name="Princess Blue"
+    onclick="changeDivColor('#00539C', 'test-area-2')"></button>
+<button class="color" style="background-color: #755139;" data-color-name="Toffee"
+    onclick="changeDivColor('#755139', 'test-area-2')"></button>
+<button class="color" style="background-color: #D69C2F;" data-color-name="Mango Mojito"
+    onclick="changeDivColor('#D69C2F', 'test-area-2')"></button>
+<button class="color" style="background-color: #616247;" data-color-name="Terrarium Moss"
+    onclick="changeDivColor('#616247', 'test-area-2')"></button>
+<button class="color" style="background-color: #E8B5CE;" data-color-name="Sweet Lilac"
+    onclick="changeDivColor('#E8B5CE', 'test-area-2')"></button>
+<button class="color" style="background-color: #D2C29D;" data-color-name="Soybean"
+    onclick="changeDivColor('#D2C29D', 'test-area-2')"></button>
+<button class="color" style="background-color: #343148;" data-color-name="Eclipse"
+    onclick="changeDivColor('#343148', 'test-area-2')"></button>
+<button class="color" style="background-color: #F0EAD6;" data-color-name="Sweet Corn"
+    onclick="changeDivColor('#F0EAD6', 'test-area-2')"></button>
+<button class="color" style="background-color: #615550;" data-color-name="Brown Granite"
+    onclick="changeDivColor('#615550', 'test-area-2')"></button>
+
                 </div>
             </div>
         </div>
@@ -126,21 +166,26 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h5 class="text-white mb-3">Kartalla</h5>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.8379692809362!2d25.508349977649235!3d65.00146934481731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cd5aac2e0dcb%3A0xd0f738d563fe562d!2sKotkantie%203%2C%2090250%20Oulu%2C%20Suomi!5e1!3m2!1sfi!2sus!4v1717574402900!5m2!1sfi!2sus" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.8379692809362!2d25.508349977649235!3d65.00146934481731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cd5aac2e0dcb%3A0xd0f738d563fe562d!2sKotkantie%203%2C%2090250%20Oulu%2C%20Suomi!5e1!3m2!1sfi!2sus!4v1717574402900!5m2!1sfi!2sus"
+                            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <h5 class="text-white mb-3">Yhteystiedot</h5>
                         <ul class="list-unstyled mb-0">
-                            <li><a href="https://maps.app.goo.gl/LrHc7cmNsEPh6Z8Y8" class="text-white">Kotkantie 3, 90100 Oulu</a></li>
+                            <li><a href="https://maps.app.goo.gl/LrHc7cmNsEPh6Z8Y8" class="text-white">Kotkantie 3,
+                                    90100 Oulu</a></li>
                             <li><a href="tel:+3584499988899" class="text-white">+ 358 44 999 888 99</a></li>
-                            <li><a href="mailto:info@kotkantienmaalaus.fi" class="text-white">info@kotkantienmaalaus.fi</a></li>
+                            <li><a href="mailto:info@kotkantienmaalaus.fi"
+                                    class="text-white">info@kotkantienmaalaus.fi</a></li>
                         </ul>
                         <br>
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/yourinstagram" class="text-white me-2">
+                            <a href="https://www.instagram.com/osaopalvelut/" class="text-white me-2">
                                 <i class="fab fa-instagram fa-3x"></i>
                             </a>
-                            <a href="https://www.youtube.com/youryoutubechannel" class="text-white">
+                            <a href="https://www.youtube.com/channel/UC3Iqv_zEnWSkxxi4hhwwvzQ" class="text-white">
                                 <i class="fab fa-youtube fa-3x"></i>
                             </a>
                         </div>
@@ -163,4 +208,5 @@
         </div>
     </footer>
 </body>
+
 </html>
