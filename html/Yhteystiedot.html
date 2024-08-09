@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Yhteystiedot</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
 </head>
-
+<button id="backToTop" class="btn btn-primary" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+</button>
 <body>
     <div class="loading-overlay">
         <div class="loader"></div>
     </div>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="logo.svg" alt="Logo" style="width:100px;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="Logo" style="width:100px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +47,7 @@
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <img src="phone.png" alt="phone" style="width:30px; margin-right: 10px;">
+                    <img src="images/phone.png" alt="phone" style="width:30px; margin-right: 10px;">
                     <a class="nav-link active" href="tel:+3584499988899">+ 358 44 999 888 99</a>
                 </div>
             </div>
@@ -59,17 +62,23 @@
         <h2>Miten otan yhteyttä?</h2>
         <div class="row">
             <div class="col-md-4 text-center">
-                <img src="phone.png" alt="paint" style="width:100px; margin: 25px;">
+                <a href="tel:+3584499988899">
+                    <img src="images/phone.png" alt="paint" style="width:100px; margin: 25px;">
+                </a>
                 <h3>Puhelin</h3>
-                <p>Soita + 358 44 999 888 99</p>
+                <p>Soita <a href="tel:+3584499988899">+ 358 44 999 888 99</a></p>
             </div>
+            
             <div class="col-md-4 text-center">
-                <img src="email.png" alt="wallpaper" style="width:100px; margin: 25px;">
+                <a href="mailto:info@kotkantienmaalaus.fi">
+                <img src="images/email.png" alt="wallpaper" style="width:100px; margin: 25px;">
+            </a>
                 <h3>Sähköposti</h3>
-                <p>Lähetä sähköpostiviesti osoitteeseen info@kotkantienmaalaus.fi</p>
+                <p>Lähetä sähköpostiviesti osoitteeseen <a
+                        href="mailto:info@kotkantienmaalaus.fi">info@kotkantienmaalaus.fi</a> </p>
             </div>
             <div class="col-md-4 text-center">
-                <img src="form.png" alt="color pick" style="width:100px; margin: 25px;">
+                <img src="images/form.png" alt="color pick" style="width:100px; margin: 25px;">
                 <h3>Yhteydenottolomake</h3>
                 <p>Lähetä yhteydenottolomake alla olevasta lomakeesta</p>
             </div>
@@ -97,12 +106,29 @@
                 </select>
             </div>
             <div class="mb-3">
+                <label for="interest" class="form-label">Olen kiinnostunut</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="interest" id="painting" value="Maalauksesta" required>
+                        <label class="form-check-label" for="painting">Maalauksesta</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="interest" id="wallpapering" value="Tapetoinnista" required>
+                        <label class="form-check-label" for="wallpapering">Tapetoinnista</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="interest" id="both" value="Molemmista" required>
+                        <label class="form-check-label" for="wallpapering">Molemmista</label>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mb-3">
                 <label for="message" class="form-label">Viesti</label>
                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Lähetä viesti</button>
-        </form>
-    </div>
+        </form></div>
     <br><br>
     <footer>
         <div class="bg-dark text-white">

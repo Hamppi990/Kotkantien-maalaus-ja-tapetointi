@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('magicpattern-wave-generator-1718778646222.svg'); 
-    background-size:auto;
+    background-image: url('images/magicpattern-wave-generator-1718778646222.svg');
+    background-size:contain;
 }
 
 
@@ -29,6 +29,7 @@ body {
     width: 30px;
     margin-right: 15px;
 }
+
 button:hover,
 .btn-primary:hover,
 .btn-secondary:hover {
@@ -86,11 +87,16 @@ h1 {
 .colors {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Keskitä vaakasuunnassa */
-    gap: 10px; /* Väli napin ja toisen välillä */
-    width: 75%; /* Dynaaminen leveys */
-    margin: 0 auto; /* Keskittää vaakasuunnassa */
-    margin-bottom: 25px; /* Alareunaan marginaali */
+    justify-content: center;
+    /* Keskitä vaakasuunnassa */
+    gap: 10px;
+    /* Väli napin ja toisen välillä */
+    width: 75%;
+    /* Dynaaminen leveys */
+    margin: 0 auto;
+    /* Keskittää vaakasuunnassa */
+    margin-bottom: 25px;
+    /* Alareunaan marginaali */
 }
 
 
@@ -102,7 +108,7 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: transform 0.2s ease;
-    
+
 }
 
 .color:hover {
@@ -112,7 +118,7 @@ h1 {
 .color-testing {
     margin-top: 20px;
     text-align: center;
-    
+
 }
 
 .test-area {
@@ -121,23 +127,26 @@ h1 {
     align-items: center;
     width: 200px;
     height: 200px;
-    background-color: #ffffff;
+    background-color: #fff;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-.btn-secondary
-{
+
+.btn-secondary {
     margin: 15px;
     margin-bottom: 25px;
-    
+
 }
+
 footer a {
     text-decoration: none;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
+
 .mt-5 {
     background-color: rgb(250, 251, 255);
     border-radius: 10px;
@@ -146,8 +155,8 @@ footer a:hover {
     padding-bottom: 5%;
     padding-right: 5%;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-    background-image: url('magicpattern-polka-dot-pattern-1718778258230.png'); 
-    background-size:auto;
+    background-image: url('images/magicpattern-polka-dot-pattern-1718778258230.png');
+    background-size: auto;
 }
 
 .mt-6 {
@@ -158,21 +167,25 @@ footer a:hover {
     padding-bottom: 5%;
     padding-right: 5%;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-    background-image: url('magicpattern-polka-dot-pattern-1718778258230.png'); 
-    background-size:auto;
+    background-image: url('images/magicpattern-polka-dot-pattern-1718778258230.png');
+    background-size: auto;
     display: flex;
     justify-content: center;
     align-items: column;
-    min-height: 50vh; /* Ensure full viewport height */
+    min-height: 50vh;
+    /* Ensure full viewport height */
 }
 
 /* Kuvien koon määrittely */
 .gallery-image {
     width: 100%;
-    height: 300px; /* Määritä korkeus, jota haluat käyttää */
+    height: 300px;
+    /* Määritä korkeus, jota haluat käyttää */
     object-fit: cover;
-    border-radius: 10px; /* Pidä olemassa oleva border-radius */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Pidä olemassa oleva varjostus */
+    border-radius: 10px;
+    /* Pidä olemassa oleva border-radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Pidä olemassa oleva varjostus */
     transition: transform 0.2s;
 }
 
@@ -186,20 +199,22 @@ footer a:hover {
     height: auto;
     border-radius: 15px;
 }
+
 #modalImage {
     width: 100%;
     height: auto;
     border-radius: 15px;
 }
-#modalImage:hover
-{
+
+#modalImage:hover {
     transform: scale(1.00);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-section {
-    position: relative; /* Tarvitaan absoluuttiselle overlay-elementille */
-    background-image: url('bg.jpg');
+    position: relative;
+    /* Tarvitaan absoluuttiselle overlay-elementille */
+    background-image: url('images/bg.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -208,8 +223,10 @@ footer a:hover {
 }
 
 .hero-section2 {
-    position: relative; /* Tarvitaan absoluuttiselle overlay-elementille */
-    padding: 70px 0;;
+    position: relative;
+    /* Tarvitaan absoluuttiselle overlay-elementille */
+    padding: 70px 0;
+    ;
     color: #000000;
     text-align: center;
 }
@@ -223,7 +240,8 @@ footer a:hover {
     right: 0;
     bottom: 0;
     background: rgba(142, 134, 134, 0.5);
-    z-index: 1; /* Asetetaan z-indeksi pienemmäksi kuin tekstille */
+    z-index: 1;
+    /* Asetetaan z-indeksi pienemmäksi kuin tekstille */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -231,22 +249,26 @@ footer a:hover {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    position: relative; /* Tarvitaan korostetulle tekstile */
-    z-index: 2; /* Asetetaan z-indeksi suuremmaksi kuin overlayn */
+    position: relative;
+    /* Tarvitaan korostetulle tekstile */
+    z-index: 2;
+    /* Asetetaan z-indeksi suuremmaksi kuin overlayn */
 }
 
 .hero-section h3 {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 30px;
-    position: relative; /* Samoin tässä */
+    position: relative;
+    /* Samoin tässä */
     z-index: 2;
 }
 
 .hero-section .btn-primary {
     font-size: 1.25rem;
     padding: 12px 36px;
-    position: relative; /* Ja tässä */
+    position: relative;
+    /* Ja tässä */
     z-index: 2;
 }
 
@@ -280,7 +302,8 @@ form-label {
 
 .form-control {
     border-radius: 8px;
-    border-color: #ced4da; /* Adjust as needed */
+    border-color: #ced4da;
+    /* Adjust as needed */
 }
 
 .btn-primary {
@@ -302,8 +325,8 @@ form-label {
         margin-bottom: 20px;
     }
 }
-.accordion-button:hover
-{
+
+.accordion-button:hover {
     transform: scale(1.00);
 }
 
@@ -331,6 +354,71 @@ form-label {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Tyylit modaalin värialueille */
+.modal-test-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    /* Varmistaa, että teksti on valkoinen */
+}
+
+.color-info {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    /* Varmistaa, että teksti on valkoinen */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.tooltip {
+    opacity: 1;
+    /* Varmistaa, että tooltip on näkyvissä */
+    display: block;
+    /* Varmistaa, että tooltip on näkyvissä */
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Leveys 100% */
+    max-width: 1100px;
+    /* Maksimileveys */
+    margin: 0 auto;
+    /* Keskittää vaakasuunnassa */
+    text-align: center;
+    /* Tekstin keskitys */
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Initially hidden */
+    z-index: 999;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
 }

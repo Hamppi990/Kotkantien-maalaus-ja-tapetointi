@@ -10,33 +10,19 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <title>Palvelut</title>
-
-    <style>
-        .service-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            /* Leveys 100% */
-            max-width: 1100px;
-            /* Maksimileveys */
-            margin: 0 auto;
-            /* Keskittää vaakasuunnassa */
-            text-align: center;
-            /* Tekstin keskitys */
-        }
-    </style>
-</head>
-
+    <title>Palvelut</title></head>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <button id="backToTop" class="btn btn-primary" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 <body>
     <div class="loading-overlay">
         <div class="loader"></div>
     </div>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="logo.svg" alt="Logo" style="width:100px;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="Logo" style="width:100px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -60,7 +46,7 @@
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <img src="phone.png" alt="phone" style="width:30px; margin-right: 10px;">
+                    <img src="images/phone.png" alt="phone" style="width:30px; margin-right: 10px;">
                     <a class="nav-link active" href="tel:+3584499988899">+ 358 44 999 888 99</a>
                 </div>
             </div>
@@ -76,7 +62,7 @@
 
     <div class="container mt-6">
         <div class="service-item">
-            <img src="paint.svg" alt="paint" style="width:100px; margin: 25px;">
+            <img src="images/paint.svg" alt="paint" style="width:100px; margin: 25px;">
             <h2>Maalauspalvelut</h2>
             <h4>Tarjoamme ammattitaitoista maalauspalvelua seinien ja kattojen maalaukseen. Käytämme vain
                 korkealaatuisia maaleja ja huolehdimme kaikista valmistelutöistä, kuten suojauksesta ja
@@ -86,7 +72,7 @@
     <br><br>
     <div class="container mt-6">
         <div class="service-item">
-            <img src="wallpaper.svg" alt="paint" style="width:100px; margin: 25px;">
+            <img src="images/wallpaper.svg" alt="wallpaper" style="width:100px; margin: 25px;">
             <h2>Tapetointipalvelut</h2>
             <h4>Tapetoimme seinät ammattitaidolla valitsemallasi tapetilla. Varmistamme, että tapetit kiinnittyvät
                 täydellisesti ilman ryppyjä tai ilmakuplia, ja tarjoamme neuvoja parhaista tapettivalinnoista, jotta
@@ -96,13 +82,20 @@
     <br><br>
     <div class="container mt-6">
         <div class="service-item">
-            <img src="colorpick.svg" alt="paint" style="width:100px; margin: 25px;">
+            <img src="images/colorpick.svg" alt="colorpick" style="width:100px; margin: 25px;">
             <h2>Värien testaus</h2>
             <h4>Autamme sinua valitsemaan sopivat värit seinien maalaukseen. Tarjoamme värikonsultointia ja
                 näytemaalausta, jotta voit varmistaa valintasi ennen lopullista päätöstä. Näin saat juuri sellaisen
                 sävyn, joka sopii täydellisesti sisustukseesi.</h4>
         </div>
     </div>
+    <br><br>
+
+    <div style="text-align: center;">
+        <h2>Kiinostuitko? Ota yhteyttä</h2><br>
+        <a href="Yhteystiedot.html" class="btn btn-primary">Ota yhteyttä</a>
+      </div>
+      
     <br><br>
     <footer>
         <div class="bg-dark text-white">
