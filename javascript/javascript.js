@@ -47,3 +47,6 @@ window.addEventListener('scroll', function() {
       navbar.classList.remove('navbar-expand-md');
     }
   });
+  window.addEventListener("load", function() {
+    document.querySelector(".loading-overlay").style.display = "none";
+});
