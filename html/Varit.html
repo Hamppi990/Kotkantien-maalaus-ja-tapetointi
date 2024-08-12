@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../javascript/javascript.js"></script>
+    <script src="../javascript/varit.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Värien testaus</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
 </head>
-
+<button id="backToTop" class="btn btn-primary" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+</button>
 <body>
     <div class="loading-overlay">
         <div class="loader"></div>
     </div>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="logo.svg" alt="Logo" style="width:100px;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="Logo" style="width:100px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +47,7 @@
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <img src="phone.png" alt="phone" style="width:30px; margin-right: 10px;">
+                    <img src="images/phone.png" alt="phone" style="width:30px; margin-right: 10px;">
                     <a class="nav-link active" href="tel:+3584499988899">+ 358 44 999 888 99</a>
                 </div>
             </div>
@@ -68,43 +71,45 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col text-center">
+                        <button class="btn btn-secondary" onclick="copyCurrentColor('test-area-1')">Kopioi Väri</button>
+
                         <button class="btn btn-secondary" onclick="resetColor('test-area-1')">Nollaa Väri</button>
                     </div>
                 </div>
                 <div class="colors">
-<!-- 16 color buttons for Palette 1 -->
-<button class="color" style="background-color: #DD4132;" data-color-name="Fiesta"
-    onclick="changeDivColor('#DD4132', 'test-area-1')"></button>
-<button class="color" style="background-color: #9E1030;" data-color-name="Jester Red"
-    onclick="changeDivColor('#9E1030', 'test-area-1')"></button>
-<button class="color" style="background-color: #FE840E;" data-color-name="Turmeric"
-    onclick="changeDivColor('#FE840E', 'test-area-1')"></button>
-<button class="color" style="background-color: #FF6F61;" data-color-name="Living Coral"
-    onclick="changeDivColor('#FF6F61', 'test-area-1')"></button>
-<button class="color" style="background-color: #C62168;" data-color-name="Pink Peacock"
-    onclick="changeDivColor('#C62168', 'test-area-1')"></button>
-<button class="color" style="background-color: #8D9440;" data-color-name="Pepper Stem"
-    onclick="changeDivColor('#8D9440', 'test-area-1')"></button>
-<button class="color" style="background-color: #FFD662;" data-color-name="Aspen Gold"
-    onclick="changeDivColor('#FFD662', 'test-area-1')"></button>
-<button class="color" style="background-color: #00539C;" data-color-name="Princess Blue"
-    onclick="changeDivColor('#00539C', 'test-area-1')"></button>
-<button class="color" style="background-color: #755139;" data-color-name="Toffee"
-    onclick="changeDivColor('#755139', 'test-area-1')"></button>
-<button class="color" style="background-color: #D69C2F;" data-color-name="Mango Mojito"
-    onclick="changeDivColor('#D69C2F', 'test-area-1')"></button>
-<button class="color" style="background-color: #616247;" data-color-name="Terrarium Moss"
-    onclick="changeDivColor('#616247', 'test-area-1')"></button>
-<button class="color" style="background-color: #E8B5CE;" data-color-name="Sweet Lilac"
-    onclick="changeDivColor('#E8B5CE', 'test-area-1')"></button>
-<button class="color" style="background-color: #D2C29D;" data-color-name="Soybean"
-    onclick="changeDivColor('#D2C29D', 'test-area-1')"></button>
-<button class="color" style="background-color: #343148;" data-color-name="Eclipse"
-    onclick="changeDivColor('#343148', 'test-area-1')"></button>
-<button class="color" style="background-color: #F0EAD6;" data-color-name="Sweet Corn"
-    onclick="changeDivColor('#F0EAD6', 'test-area-1')"></button>
-<button class="color" style="background-color: #615550;" data-color-name="Brown Granite"
-    onclick="changeDivColor('#615550', 'test-area-1')"></button>
+                    <!-- 16 color buttons for Palette 1 -->
+                    <button class="color" style="background-color: #DD4132;" data-color-name="Fiesta"
+                        onclick="changeDivColor('#DD4132', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #9E1030;" data-color-name="Jester Red"
+                        onclick="changeDivColor('#9E1030', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #FE840E;" data-color-name="Turmeric"
+                        onclick="changeDivColor('#FE840E', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #FF6F61;" data-color-name="Living Coral"
+                        onclick="changeDivColor('#FF6F61', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #C62168;" data-color-name="Pink Peacock"
+                        onclick="changeDivColor('#C62168', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #8D9440;" data-color-name="Pepper Stem"
+                        onclick="changeDivColor('#8D9440', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #FFD662;" data-color-name="Aspen Gold"
+                        onclick="changeDivColor('#FFD662', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #00539C;" data-color-name="Princess Blue"
+                        onclick="changeDivColor('#00539C', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #755139;" data-color-name="Toffee"
+                        onclick="changeDivColor('#755139', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #D69C2F;" data-color-name="Mango Mojito"
+                        onclick="changeDivColor('#D69C2F', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #616247;" data-color-name="Terrarium Moss"
+                        onclick="changeDivColor('#616247', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #E8B5CE;" data-color-name="Sweet Lilac"
+                        onclick="changeDivColor('#E8B5CE', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #D2C29D;" data-color-name="Soybean"
+                        onclick="changeDivColor('#D2C29D', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #343148;" data-color-name="Eclipse"
+                        onclick="changeDivColor('#343148', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #F0EAD6;" data-color-name="Sweet Corn"
+                        onclick="changeDivColor('#F0EAD6', 'test-area-1')"></button>
+                    <button class="color" style="background-color: #615550;" data-color-name="Brown Granite"
+                        onclick="changeDivColor('#615550', 'test-area-1')"></button>
 
                 </div>
             </div>
@@ -117,49 +122,85 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col text-center">
+                        <button class="btn btn-secondary" onclick="copyCurrentColor('test-area-2')">Kopioi Väri</button>
+
                         <button class="btn btn-secondary" onclick="resetColor('test-area-2')">Nollaa Väri</button>
                     </div>
-                </div>
-                <div class="colors">
-<!-- 16 color buttons for Palette 1 -->
-<button class="color" style="background-color: #DD4132;" data-color-name="Fiesta"
-    onclick="changeDivColor('#DD4132', 'test-area-2')"></button>
-<button class="color" style="background-color: #9E1030;" data-color-name="Jester Red"
-    onclick="changeDivColor('#9E1030', 'test-area-2')"></button>
-<button class="color" style="background-color: #FE840E;" data-color-name="Turmeric"
-    onclick="changeDivColor('#FE840E', 'test-area-2')"></button>
-<button class="color" style="background-color: #FF6F61;" data-color-name="Living Coral"
-    onclick="changeDivColor('#FF6F61', 'test-area-2')"></button>
-<button class="color" style="background-color: #C62168;" data-color-name="Pink Peacock"
-    onclick="changeDivColor('#C62168', 'test-area-2')"></button>
-<button class="color" style="background-color: #8D9440;" data-color-name="Pepper Stem"
-    onclick="changeDivColor('#8D9440', 'test-area-2')"></button>
-<button class="color" style="background-color: #FFD662;" data-color-name="Aspen Gold"
-    onclick="changeDivColor('#FFD662', 'test-area-2')"></button>
-<button class="color" style="background-color: #00539C;" data-color-name="Princess Blue"
-    onclick="changeDivColor('#00539C', 'test-area-2')"></button>
-<button class="color" style="background-color: #755139;" data-color-name="Toffee"
-    onclick="changeDivColor('#755139', 'test-area-2')"></button>
-<button class="color" style="background-color: #D69C2F;" data-color-name="Mango Mojito"
-    onclick="changeDivColor('#D69C2F', 'test-area-2')"></button>
-<button class="color" style="background-color: #616247;" data-color-name="Terrarium Moss"
-    onclick="changeDivColor('#616247', 'test-area-2')"></button>
-<button class="color" style="background-color: #E8B5CE;" data-color-name="Sweet Lilac"
-    onclick="changeDivColor('#E8B5CE', 'test-area-2')"></button>
-<button class="color" style="background-color: #D2C29D;" data-color-name="Soybean"
-    onclick="changeDivColor('#D2C29D', 'test-area-2')"></button>
-<button class="color" style="background-color: #343148;" data-color-name="Eclipse"
-    onclick="changeDivColor('#343148', 'test-area-2')"></button>
-<button class="color" style="background-color: #F0EAD6;" data-color-name="Sweet Corn"
-    onclick="changeDivColor('#F0EAD6', 'test-area-2')"></button>
-<button class="color" style="background-color: #615550;" data-color-name="Brown Granite"
-    onclick="changeDivColor('#615550', 'test-area-2')"></button>
 
+                </div>
+
+                <div class="colors">
+                    <!-- 16 color buttons for Palette 1 -->
+                    <button class="color" style="background-color: #DD4132;" data-color-name="Fiesta"
+                        onclick="changeDivColor('#DD4132', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #9E1030;" data-color-name="Jester Red"
+                        onclick="changeDivColor('#9E1030', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #FE840E;" data-color-name="Turmeric"
+                        onclick="changeDivColor('#FE840E', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #FF6F61;" data-color-name="Living Coral"
+                        onclick="changeDivColor('#FF6F61', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #C62168;" data-color-name="Pink Peacock"
+                        onclick="changeDivColor('#C62168', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #8D9440;" data-color-name="Pepper Stem"
+                        onclick="changeDivColor('#8D9440', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #FFD662;" data-color-name="Aspen Gold"
+                        onclick="changeDivColor('#FFD662', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #00539C;" data-color-name="Princess Blue"
+                        onclick="changeDivColor('#00539C', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #755139;" data-color-name="Toffee"
+                        onclick="changeDivColor('#755139', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #D69C2F;" data-color-name="Mango Mojito"
+                        onclick="changeDivColor('#D69C2F', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #616247;" data-color-name="Terrarium Moss"
+                        onclick="changeDivColor('#616247', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #E8B5CE;" data-color-name="Sweet Lilac"
+                        onclick="changeDivColor('#E8B5CE', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #D2C29D;" data-color-name="Soybean"
+                        onclick="changeDivColor('#D2C29D', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #343148;" data-color-name="Eclipse"
+                        onclick="changeDivColor('#343148', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #F0EAD6;" data-color-name="Sweet Corn"
+                        onclick="changeDivColor('#F0EAD6', 'test-area-2')"></button>
+                    <button class="color" style="background-color: #615550;" data-color-name="Brown Granite"
+                        onclick="changeDivColor('#615550', 'test-area-2')"></button>
+
+                </div>
+            </div>   
+            <button class="btn btn-primary btn-lg" onclick="showColorsInModal()">
+                Katso läheltä
+            </button>
+
+            <div class="modal fade" id="colorModal" tabindex="-1" aria-labelledby="colorModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="colorModalLabel">Värien yhdistelmä</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="modal-test-area-1" class="modal-test-area"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="modal-test-area-2" class="modal-test-area"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <br><br>
+    <div style="text-align: center;">
+        <h2>Kiinostuitko? Ota yhteyttä</h2><br>
+        <a href="Yhteystiedot.html" class="btn btn-primary">Ota yhteyttä <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+      <br><br>
     <footer>
         <div class="bg-dark text-white">
             <div class="container py-4">
