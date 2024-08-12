@@ -86,14 +86,17 @@
     </div>
     <div class="container mt-5">
         <h2>Yhteydenottolomake</h2>
-        <form id="contactForm" action="#" method="POST">
+        <form id="contactForm" action="#" method="POST" novalidate>
+            <!-- Lomakkeen kentät -->
             <div class="mb-3">
                 <label for="name" class="form-label">Nimi</label>
                 <input type="text" class="form-control" id="name" name="name" required>
+                <div class="invalid-feedback">Ole hyvä ja anna nimesi.</div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Sähköposti</label>
                 <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">Ole hyvä ja anna sähköpostiosoitteesi.</div>
             </div>
             <div class="mb-3">
                 <label for="subject" class="form-label">Aihe</label>
@@ -104,6 +107,7 @@
                     <option value="Tarjouspyyntö">Tarjouspyyntö</option>
                     <option value="Muu">Muu</option>
                 </select>
+                <div class="invalid-feedback">Ole hyvä ja valitse aihe.</div>
             </div>
             <div class="mb-3">
                 <label for="interest" class="form-label">Olen kiinnostunut</label>
@@ -118,14 +122,15 @@
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="interest" id="both" value="Molemmista" required>
-                        <label class="form-check-label" for="wallpapering">Molemmista</label>
+                        <label class="form-check-label" for="both">Molemmista</label>
                     </div>
+                    <div class="invalid-feedback">Ole hyvä ja valitse yksi vaihtoehto.</div>
                 </div>
-                
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Viesti</label>
                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                <div class="invalid-feedback">Ole hyvä ja kirjoita viestisi.</div>
             </div>
             <button type="submit" class="btn btn-primary">Lähetä viesti</button>
         </form></div>
