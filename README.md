@@ -74,11 +74,119 @@ Sivustolla on useita asioita, jotka parantavat käyttäjäkokemusta ja helpottav
 - **Kartta:** Footerissa on integroitu kartta, jonka avulla käyttäjä voi helposti löytää yrityksen sijainnin ja saada reittiohjeet.
 
 ## Käyttämäni työkalut
-- **HTML** 
-- **CSS** 
-- **JavaScript** 
-- **Kirjastot (Bootstrap ja jQuery** 
+- **HTML**:llä tein sivuston rakenteen, linkit ja kuvat.
+``` HTML
+<div class="container mt-6">
+        <div class="service-item">
+            <img src="images/paint.svg" alt="paint" style="width:100px; margin: 25px;">
+            <h2>Maalauspalvelut</h2>
+            <h4>Tarjoamme ammattitaitoista maalauspalvelua seinien ja kattojen maalaukseen. Käytämme vain
+                korkealaatuisia maaleja ja huolehdimme kaikista valmistelutöistä, kuten suojauksesta ja
+                pohjamaalauksesta, taataksemme täydellisen lopputuloksen.</h4>
+        </div>
+    </div>
+  ```
+- **CSS**:llä tein sivulle näyttävän ulkoasun.
+``` CSS
+.mt-5 {
+    background-color: rgb(250, 251, 255);
+    border-radius: 10px;
+    padding: 2.5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    background-image: url('images/magicpattern-polka-dot-pattern-1718778258230.png');
+    background-size: auto;
+}
+  ```
+- **JavaScript**illä tein esimerkiksi värintestauksen ja gallerian kuvien näyttämisen kokoruudulla.
 
+ ``` JavaScript
+ function loadMoreImages() {
+        let newImages = [];
+
+        if (clickCount === 0) {
+            newImages = [
+                'images/tapetointi7.jpg',
+                'images/tapetointi8.jpg',
+                'images/tapetointi9.jpg'
+            ];
+        } else if (clickCount === 1) {
+            newImages = [
+                'images/tapetointi10.jpg',
+                'images/tapetointi11.jpg',
+                'images/tapetointi12.jpg'
+            ];
+        } else {
+            loadMoreBtn.disabled = true;
+            loadMoreBtn.textContent = 'Ei enempää kuvia';
+            return;
+        }
+
+        newImages.forEach(image => {
+            const col = document.createElement('div');
+            col.classList.add('col-md-4');
+            col.innerHTML = `<img src="${image}" class="img-fluid gallery-image" alt="Galleria Kuva">`;
+            gallery.appendChild(col);
+
+            const newImg = col.querySelector('.gallery-image');
+            addImageClickEvent(newImg);
+        });
+
+        clickCount++;
+    }
+  ```
+- **Kirjastot (Bootstrap ja jQuery)** Bootstrapin avulla tein footerin ja navigointipalkin. JQueryllä tein UKK-osion sivuun.
+
+  ``` HTML
+    <footer>
+        <div class="bg-dark text-white">
+            <div class="container py-4">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h5 class="text-white mb-3">Kartalla</h5>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.8379692809362!2d25.508349977649235!3d65.00146934481731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cd5aac2e0dcb%3A0xd0f738d563fe562d!2sKotkantie%203%2C%2090250%20Oulu%2C%20Suomi!5e1!3m2!1sfi!2sus!4v1717574402900!5m2!1sfi!2sus"
+                            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h5 class="text-white mb-3">Yhteystiedot</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="https://maps.app.goo.gl/LrHc7cmNsEPh6Z8Y8" class="text-white">Kotkantie 3,
+                                    90100 Oulu</a></li>
+                            <li><a href="tel:+3584499988899" class="text-white">+ 358 44 999 888 99</a></li>
+                            <li><a href="mailto:info@kotkantienmaalaus.fi"
+                                    class="text-white">info@kotkantienmaalaus.fi</a></li>
+                        </ul>
+                        <br>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/osaopalvelut/" class="text-white me-2">
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC3Iqv_zEnWSkxxi4hhwwvzQ" class="text-white">
+                                <i class="fab fa-youtube fa-3x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="text-white mb-3">Navigointi</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="index.html" class="text-white">Etusivu</a></li>
+                            <li><a href="Palvelut.html" class="text-white">Palvelut</a></li>
+                            <li><a href="Varit.html" class="text-white">Värien testaus</a></li>
+                            <li><a href="Galleria.html" class="text-white">Galleria</a></li>
+                            <li><a href="Yhteystiedot.html" class="text-white">Yhteystiedot</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark text-white text-center py-3">
+                © 2024 Kotkantien maalaus ja tapetointi
+            </div>
+        </div>
+    </footer>
 ## Jatkokehitysideat
 - Yhteydenottolomake, joka oikeasti lähettyy jonnekin.
 - Yhteydenottolomakkeeseen voisi liittää kuvia.
