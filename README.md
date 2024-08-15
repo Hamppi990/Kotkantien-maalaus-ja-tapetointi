@@ -57,7 +57,7 @@ Yhteystiedot-sivulla esitetään kaikki tarvittavat tiedot yhteydenottoa varten:
 - **Yrityksen osoite:** Fyysinen sijainti ja kartta footerissa.
 - **Puhelinnumero ja sähköposti:** Yhteydenottotiedot asiakaspalveluun.
 - **Yhteydenottolomake:** Mahdollisuus lähettää viesti suoraan sivustolta.
-- **Sosiaalisen median linkit:** Linkit yrityksen some-tileihin.
+- **Sosiaalisen median linkit:** Linkit yrityksen some-tileihin footerissa.
 
 ![image](https://github.com/user-attachments/assets/15f7e95d-b695-4c85-af7b-db597c0c4cb0)
 
