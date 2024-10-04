@@ -1,7 +1,7 @@
 # Kotkantien maalaus- ja tapetointi
 
 ## Yleiskuvaus
-
+https://geronimo.okol.org/~joojun/Maalaus/html/
 ### Nimi
 **Kotkantien maalaus- ja tapetointi**
 
